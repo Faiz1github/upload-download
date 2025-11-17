@@ -1,0 +1,1026 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>BTD08.kml</name>
+	<atom:link rel="app" href="https://www.google.com/earth/about/versions/#earth-pro" title="Google Earth Pro 7.3.6.10441"></atom:link>
+	<Schema name="Fat Map" id="S_Fat_Map_SIDD">
+		<SimpleField type="string" name="Planned_Fats"><displayName>&lt;b&gt;Planned Fats&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="HP"><displayName>&lt;b&gt;HP&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="Lat"><displayName>&lt;b&gt;Lat&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="Long"><displayName>&lt;b&gt;Long&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Schema name="Primary Splitter" id="S_Primary_Splitter_SIIDD0">
+		<SimpleField type="string" name="ODF_No_"><displayName>&lt;b&gt;ODF No.&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="Primary_Splitter"><displayName>&lt;b&gt;Primary Splitter&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="Occupied_HPs"><displayName>&lt;b&gt;Occupied HPs&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="LAT"><displayName>&lt;b&gt;LAT&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="LONG"><displayName>&lt;b&gt;LONG&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Style id="sn_ylw-pushpin135">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff7faaff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin145">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff00aa</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="pointStyleMap2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin02">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin7</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl03</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl03">
+		<IconStyle>
+			<color>ffffff00</color>
+			<scale>1.18182</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/polygon.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin103">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin145</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin96</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="normPointStyle2">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<scale>2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_square.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>ODF No.</b></td><td>$[Primary Splitter/ODF_No_]</td></tr>
+  <tr><td><b>Primary Splitter</b></td><td>$[Primary Splitter/Primary_Splitter]</td></tr>
+  <tr><td><b>Occupied HPs</b></td><td>$[Primary Splitter/Occupied_HPs]</td></tr>
+  <tr><td><b>LAT</b></td><td>$[Primary Splitter/LAT]</td></tr>
+  <tr><td><b>LONG</b></td><td>$[Primary Splitter/LONG]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin601">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
+	<Style id="normPointStyle0">
+		<IconStyle>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/ylw-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.8</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>Planned Fats</b></td><td>$[Fat Map/Planned_Fats]</td></tr>
+  <tr><td><b>HP</b></td><td>$[Fat Map/HP]</td></tr>
+  <tr><td><b>Lat</b></td><td>$[Fat Map/Lat]</td></tr>
+  <tr><td><b>Long</b></td><td>$[Fat Map/Long]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/ylw-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sh_ylw-circle">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/ylw-circle.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.8</scale>
+		</LabelStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/ylw-circle-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="pointStyleMap0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin173">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin004</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin601</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin124">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin135</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin154</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin7">
+		<IconStyle>
+			<color>ffffff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/polygon.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="sn_ylw-circle">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/ylw-circle.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.8</scale>
+		</LabelStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/ylw-circle-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="hlightPointStyle2">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<scale>2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_square_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>ODF No.</b></td><td>$[Primary Splitter/ODF_No_]</td></tr>
+  <tr><td><b>Primary Splitter</b></td><td>$[Primary Splitter/Primary_Splitter]</td></tr>
+  <tr><td><b>Occupied HPs</b></td><td>$[Primary Splitter/Occupied_HPs]</td></tr>
+  <tr><td><b>LAT</b></td><td>$[Primary Splitter/LAT]</td></tr>
+  <tr><td><b>LONG</b></td><td>$[Primary Splitter/LONG]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="hlightPointStyle0">
+		<IconStyle>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/ylw-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.8</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>Planned Fats</b></td><td>$[Fat Map/Planned_Fats]</td></tr>
+  <tr><td><b>HP</b></td><td>$[Fat Map/HP]</td></tr>
+  <tr><td><b>Lat</b></td><td>$[Fat Map/Lat]</td></tr>
+  <tr><td><b>Long</b></td><td>$[Fat Map/Long]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/ylw-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin004">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>4</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="msn_ylw-circle">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-circle</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-circle</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin96">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ffff00aa</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin154">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff7faaff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<Placemark>
+		<name>BTD080101</name>
+		<styleUrl>#pointStyleMap0</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="#S_Fat_Map_SIDD">
+				<SimpleData name="Planned_Fats">BTD080101</SimpleData>
+				<SimpleData name="HP">8</SimpleData>
+				<SimpleData name="Lat">23.5238</SimpleData>
+				<SimpleData name="Long">77.8349</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.83485569999998,23.52375776000002,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>BTD080102</name>
+		<styleUrl>#pointStyleMap0</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="#S_Fat_Map_SIDD">
+				<SimpleData name="Planned_Fats">BTD080102</SimpleData>
+				<SimpleData name="HP">8</SimpleData>
+				<SimpleData name="Lat">23.5242</SimpleData>
+				<SimpleData name="Long">77.8346</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.83462944999995,23.52418470000001,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>BTD080103</name>
+		<styleUrl>#pointStyleMap0</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="#S_Fat_Map_SIDD">
+				<SimpleData name="Planned_Fats">BTD080103</SimpleData>
+				<SimpleData name="HP">8</SimpleData>
+				<SimpleData name="Lat">23.5248</SimpleData>
+				<SimpleData name="Long">77.8343</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.83430880000004,23.52479795999999,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>BTD080104</name>
+		<styleUrl>#pointStyleMap0</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="#S_Fat_Map_SIDD">
+				<SimpleData name="Planned_Fats">BTD080104</SimpleData>
+				<SimpleData name="HP">8</SimpleData>
+				<SimpleData name="Lat">23.5247</SimpleData>
+				<SimpleData name="Long">77.8342</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.83415254999998,23.52466781999997,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>BTD080105</name>
+		<styleUrl>#pointStyleMap0</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="#S_Fat_Map_SIDD">
+				<SimpleData name="Planned_Fats">BTD080105</SimpleData>
+				<SimpleData name="HP">8</SimpleData>
+				<SimpleData name="Lat">23.5234</SimpleData>
+				<SimpleData name="Long">77.8349</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.83488098999999,23.52339568999999,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>BTD080106</name>
+		<styleUrl>#pointStyleMap0</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="#S_Fat_Map_SIDD">
+				<SimpleData name="Planned_Fats">BTD080106</SimpleData>
+				<SimpleData name="HP">8</SimpleData>
+				<SimpleData name="Lat">23.5233</SimpleData>
+				<SimpleData name="Long">77.8354</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.8354034,23.52333755000002,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>BTD080107</name>
+		<styleUrl>#pointStyleMap0</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="#S_Fat_Map_SIDD">
+				<SimpleData name="Planned_Fats">BTD080107</SimpleData>
+				<SimpleData name="HP">8</SimpleData>
+				<SimpleData name="Lat">23.5231</SimpleData>
+				<SimpleData name="Long">77.8355</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.83552269,23.52312623,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>BTD080108</name>
+		<styleUrl>#pointStyleMap0</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="#S_Fat_Map_SIDD">
+				<SimpleData name="Planned_Fats">BTD080108</SimpleData>
+				<SimpleData name="HP">8</SimpleData>
+				<SimpleData name="Lat">23.5227</SimpleData>
+				<SimpleData name="Long">77.8353</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.83525082000001,23.52272385,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>BTD080201</name>
+		<styleUrl>#pointStyleMap0</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="#S_Fat_Map_SIDD">
+				<SimpleData name="Planned_Fats">BTD080201</SimpleData>
+				<SimpleData name="HP">8</SimpleData>
+				<SimpleData name="Lat">23.5227</SimpleData>
+				<SimpleData name="Long">77.8358</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.83580683000001,23.52266115999997,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>BTD080202</name>
+		<styleUrl>#pointStyleMap0</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="#S_Fat_Map_SIDD">
+				<SimpleData name="Planned_Fats">BTD080202</SimpleData>
+				<SimpleData name="HP">8</SimpleData>
+				<SimpleData name="Lat">23.5225</SimpleData>
+				<SimpleData name="Long">77.8359</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.83587937999998,23.52253712999998,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>BTD080203</name>
+		<styleUrl>#pointStyleMap0</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="#S_Fat_Map_SIDD">
+				<SimpleData name="Planned_Fats">BTD080203</SimpleData>
+				<SimpleData name="HP">8</SimpleData>
+				<SimpleData name="Lat">23.5225</SimpleData>
+				<SimpleData name="Long">77.8364</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.83637273999999,23.52252428,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>BTD080204</name>
+		<styleUrl>#pointStyleMap0</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="#S_Fat_Map_SIDD">
+				<SimpleData name="Planned_Fats">BTD080204</SimpleData>
+				<SimpleData name="HP">8</SimpleData>
+				<SimpleData name="Lat">23.5225</SimpleData>
+				<SimpleData name="Long">77.8366</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.83658788000001,23.52246561000002,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>BTD080205</name>
+		<styleUrl>#pointStyleMap0</styleUrl>
+		<ExtendedData>
+			<SchemaData schemaUrl="#S_Fat_Map_SIDD">
+				<SimpleData name="Planned_Fats">BTD080205</SimpleData>
+				<SimpleData name="HP">8</SimpleData>
+				<SimpleData name="Lat">23.5224</SimpleData>
+				<SimpleData name="Long">77.837</SimpleData>
+			</SchemaData>
+		</ExtendedData>
+		<Point>
+			<coordinates>77.83704697999998,23.52239669999999,0</coordinates>
+		</Point>
+	</Placemark>
+	<Folder>
+		<name>BTD08</name>
+		<open>1</open>
+		<Placemark>
+			<name>BTD08</name>
+			<open>1</open>
+			<styleUrl>#pointStyleMap2</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Primary_Splitter_SIIDD0">
+					<SimpleData name="ODF_No_">BTD08</SimpleData>
+					<SimpleData name="Primary_Splitter">2</SimpleData>
+					<SimpleData name="Occupied_HPs">104</SimpleData>
+					<SimpleData name="LAT">23.5239</SimpleData>
+					<SimpleData name="LONG">77.835</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>77.83496000000001,23.52387999999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>To BTD08</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin173</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					77.83495967128852,23.52391120822336,0 77.83473453860381,23.5228738717258,0 77.83484812237668,23.52285110939643,0 77.83482549118658,23.52277311636184,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>JC01</name>
+			<LookAt>
+				<longitude>77.83501777177327</longitude>
+				<latitude>23.5238088492304</latitude>
+				<altitude>0</altitude>
+				<heading>0.0006146405521985049</heading>
+				<tilt>27.24132188603661</tilt>
+				<range>284.0131195696619</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin02</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>77.83516022296988,23.52384389168677,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>395</name>
+			<styleUrl>#msn_ylw-pushpin124</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					77.83516001801648,23.5238512305165,0 77.83546304814618,23.52379583892467,0 77.8353728847425,23.523353381611,0 77.83541133679638,23.52333748351896,0 77.83536477324942,23.52333604489805,0 77.83523323432129,23.52275432789334,0 77.83525635074545,23.52273900647131,0 77.83523599019362,23.52271760727908,0 77.83541609533245,23.52266560261841,0 77.83543622666379,23.5226826271835,0 77.83544724825052,23.52272184769028,0 77.83577387036891,23.52264269548071,0 77.83580805120849,23.52267465270605,0 77.83580078972399,23.52264359127871,0 77.83590558565191,23.52261905345364,0 77.83587982488754,23.52253806702742,0 77.83593008554054,23.5226121245798,0 77.83635697457122,23.52251041238128,0 77.83637767997958,23.52253876021481,0 77.83637822386339,23.52251101859929,0 77.83658290683564,23.52245853110541,0 77.83659039772105,23.52248286586471,0 77.83660645575902,23.52245435260735,0 77.83704632493915,23.52235584516967,0 77.83704441238277,23.52240714747319,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>147</name>
+			<styleUrl>#msn_ylw-pushpin124</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					77.83540928014658,23.52336039977951,0 77.83539191655117,23.52336010539223,0 77.83548187697482,23.52379837293217,0 77.83567005665171,23.5237591659182,0 77.83569764205404,23.52371884289752,0 77.83570014930569,23.52365367150555,0 77.835564140043,23.5231393256343,0 77.8355255222647,23.52312738802341,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>285</name>
+			<styleUrl>#msn_ylw-pushpin124</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					77.83516183640306,23.52385125515806,0 77.83497940518143,23.52389259424035,0 77.83494044285183,23.5237393870989,0 77.83485533054836,23.52375284456077,0 77.83485616828494,23.52377476522987,0 77.83486601272443,23.52376323660079,0 77.83493291756163,23.52375077591003,0 77.83499093758545,23.52401187155576,0 77.83501158059147,23.52416421047282,0 77.83501440709396,23.52421705958528,0 77.83464042356199,23.52428663777131,0 77.83463055454493,23.5241952521274,0 77.83461960468999,23.52429679690148,0 77.83442153495712,23.52432817550045,0 77.83437357534301,23.52451775126659,0 77.83429162812523,23.52479649092265,0 77.83431502543679,23.52481610741065,0 77.83427533452767,23.52482403064009,0 77.83420873930208,23.5248121627835,0 77.83421699657006,23.52467707614917,0 77.8341338856758,23.52466994709644,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>52</name>
+			<styleUrl>#msn_ylw-pushpin124</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					77.83485272127834,23.52376771706192,0 77.83484183938222,23.52374354556692,0 77.83494003321462,23.52372688198699,0 77.83486629408264,23.52341751435581,0 77.83487925044271,23.52339975370844,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>25</name>
+			<styleUrl>#msn_ylw-pushpin103</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					77.83495467789795,23.52389596957036,0 77.83499048596103,23.52390662075282,0 77.83515956438569,23.52387218516724,0 77.83516075640965,23.52384897065867,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+	</Folder>
+	<Placemark>
+		<name>p1</name>
+		<LookAt>
+			<longitude>77.83537461466685</longitude>
+			<latitude>23.52320630146752</latitude>
+			<altitude>0</altitude>
+			<heading>-0.0001662792409797068</heading>
+			<tilt>31.33544968422986</tilt>
+			<range>273.912825099962</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#msn_ylw-circle</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>77.83473992241429,23.52286239158558,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>p2</name>
+		<LookAt>
+			<longitude>77.83537461466685</longitude>
+			<latitude>23.52320630146752</latitude>
+			<altitude>0</altitude>
+			<heading>-0.0001662792409797068</heading>
+			<tilt>31.33544968422986</tilt>
+			<range>273.912825099962</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#msn_ylw-circle</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>77.83480588578618,23.52319285961103,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>p3</name>
+		<LookAt>
+			<longitude>77.83522785303988</longitude>
+			<latitude>23.52342855058795</latitude>
+			<altitude>0</altitude>
+			<heading>-0.0003803076837303354</heading>
+			<tilt>27.41660813453898</tilt>
+			<range>173.1368186816848</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#msn_ylw-circle</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>77.83489828744233,23.52359521392596,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>p4</name>
+		<LookAt>
+			<longitude>77.83522785303988</longitude>
+			<latitude>23.52342855058795</latitude>
+			<altitude>0</altitude>
+			<heading>-0.0003803076837303354</heading>
+			<tilt>27.41660813453898</tilt>
+			<range>173.1368186816848</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#msn_ylw-circle</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>77.83547712100219,23.52376470916965,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>p5</name>
+		<LookAt>
+			<longitude>77.83516709669802</longitude>
+			<latitude>23.52401508085773</latitude>
+			<altitude>0</altitude>
+			<heading>-0.0004045561949105454</heading>
+			<tilt>27.41661365666134</tilt>
+			<range>174.4719309675921</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#msn_ylw-circle</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>77.83500797368363,23.52404648250663,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>p6</name>
+		<LookAt>
+			<longitude>77.83516709669802</longitude>
+			<latitude>23.52401508085773</latitude>
+			<altitude>0</altitude>
+			<heading>-0.0004045561949105454</heading>
+			<tilt>27.41661365666134</tilt>
+			<range>174.4719309675921</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#msn_ylw-circle</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>77.83501612742207,23.52421682167069,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>p7</name>
+		<LookAt>
+			<longitude>77.83511313615047</longitude>
+			<latitude>23.5241571301219</latitude>
+			<altitude>0</altitude>
+			<heading>-0.0004639643987996792</heading>
+			<tilt>26.67003407580037</tilt>
+			<range>140.6839031804383</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#msn_ylw-circle</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>77.8348717971829,23.52424229011266,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>p8</name>
+		<LookAt>
+			<longitude>77.83512267743095</longitude>
+			<latitude>23.52413621066835</latitude>
+			<altitude>0</altitude>
+			<heading>-0.0004601563878805839</heading>
+			<tilt>26.67003409270525</tilt>
+			<range>140.6880997424284</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#msn_ylw-circle</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>77.8347160412289,23.52428526911627,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>p9</name>
+		<LookAt>
+			<longitude>77.83488654505192</longitude>
+			<latitude>23.52433479166085</latitude>
+			<altitude>0</altitude>
+			<heading>-0.0005544036580083842</heading>
+			<tilt>26.67003505188596</tilt>
+			<range>140.926011619975</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#msn_ylw-circle</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>77.83442966146846,23.52432596690251,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>p10</name>
+		<LookAt>
+			<longitude>77.83488654505192</longitude>
+			<latitude>23.52433479166085</latitude>
+			<altitude>0</altitude>
+			<heading>-0.0005544036580083842</heading>
+			<tilt>26.67003505188596</tilt>
+			<range>140.926011619975</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#msn_ylw-circle</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>77.83437372478471,23.52451651831366,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>p11</name>
+		<LookAt>
+			<longitude>77.83477730918747</longitude>
+			<latitude>23.52460721888599</latitude>
+			<altitude>0</altitude>
+			<heading>-0.0007218157577359178</heading>
+			<tilt>24.60047354028752</tilt>
+			<range>115.1583782023215</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#msn_ylw-circle</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>77.83433205100894,23.52466555487261,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>p12</name>
+		<LookAt>
+			<longitude>77.83453372667699</longitude>
+			<latitude>23.52468118586659</latitude>
+			<altitude>0</altitude>
+			<heading>-0.0009417490946625759</heading>
+			<tilt>22.88719613622576</tilt>
+			<range>98.15221364354731</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#msn_ylw-circle</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>77.83421366681256,23.5247917980179,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>p13</name>
+		<LookAt>
+			<longitude>77.83527246413556</longitude>
+			<latitude>23.52358361272285</latitude>
+			<altitude>0</altitude>
+			<heading>-0.0004669169504015745</heading>
+			<tilt>25.97299577278755</tilt>
+			<range>256.8588423258829</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#msn_ylw-circle</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>77.83569575969437,23.52372623539178,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>p14</name>
+		<LookAt>
+			<longitude>77.83527246413556</longitude>
+			<latitude>23.52358361272285</latitude>
+			<altitude>0</altitude>
+			<heading>-0.0004669169504015745</heading>
+			<tilt>25.97299577278755</tilt>
+			<range>256.8588423258829</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#msn_ylw-circle</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>77.83568281784223,23.52353365936137,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>p15</name>
+		<LookAt>
+			<longitude>77.83560114157578</longitude>
+			<latitude>23.52337001604164</latitude>
+			<altitude>0</altitude>
+			<heading>-0.0001335150309595231</heading>
+			<tilt>30.00076611586218</tilt>
+			<range>170.2418101102938</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#msn_ylw-circle</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>77.83561945326055,23.5233419106048,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>p16</name>
+		<LookAt>
+			<longitude>77.83560114157578</longitude>
+			<latitude>23.52337001604164</latitude>
+			<altitude>0</altitude>
+			<heading>-0.0001335150309595231</heading>
+			<tilt>30.00076611586218</tilt>
+			<range>170.2418101102938</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#msn_ylw-circle</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>77.83541162131044,23.5235370707761,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>p17</name>
+		<LookAt>
+			<longitude>77.83560114157578</longitude>
+			<latitude>23.52337001604164</latitude>
+			<altitude>0</altitude>
+			<heading>-0.0001335150309595231</heading>
+			<tilt>30.00076611586218</tilt>
+			<range>170.2418101102938</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#msn_ylw-circle</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>77.8353216057389,23.52312628572939,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>p18</name>
+		<LookAt>
+			<longitude>77.8355553978466</longitude>
+			<latitude>23.52297174764335</latitude>
+			<altitude>0</altitude>
+			<heading>-0.000151775432472868</heading>
+			<tilt>30.00076997433418</tilt>
+			<range>171.1009035086601</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#msn_ylw-circle</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>77.83527582029932,23.52292990508388,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>p19</name>
+		<LookAt>
+			<longitude>77.83586495085335</longitude>
+			<latitude>23.52285208248822</latitude>
+			<altitude>0</altitude>
+			<heading>-2.822901756786407e-05</heading>
+			<tilt>30.00077204341247</tilt>
+			<range>171.5615741421282</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#msn_ylw-circle</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>77.83542255556276,23.52267191611119,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>p20</name>
+		<LookAt>
+			<longitude>77.83586495085335</longitude>
+			<latitude>23.52285208248822</latitude>
+			<altitude>0</altitude>
+			<heading>-2.822901756786407e-05</heading>
+			<tilt>30.00077204341247</tilt>
+			<range>171.5615741421282</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#msn_ylw-circle</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>77.83545248591815,23.522723130915,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>p21</name>
+		<LookAt>
+			<longitude>77.83586495085335</longitude>
+			<latitude>23.52285208248822</latitude>
+			<altitude>0</altitude>
+			<heading>-2.822901756786407e-05</heading>
+			<tilt>30.00077204341247</tilt>
+			<range>171.5615741421282</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#msn_ylw-circle</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>77.83562056032081,23.52267978779171,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>p22</name>
+		<LookAt>
+			<longitude>77.83626479002355</longitude>
+			<latitude>23.52275982850411</latitude>
+			<altitude>0</altitude>
+			<heading>0.0001313502878975375</heading>
+			<tilt>30.0007678975163</tilt>
+			<range>170.6384932756301</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#msn_ylw-circle</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>77.83607266562646,23.52257523937108,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>p23</name>
+		<LookAt>
+			<longitude>77.83694282771813</longitude>
+			<latitude>23.52246085594474</latitude>
+			<altitude>0</altitude>
+			<heading>0.000401406760677979</heading>
+			<tilt>30.00063725781996</tilt>
+			<range>141.0277378879786</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#msn_ylw-circle</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>77.83676212234738,23.52241517976781,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>p24</name>
+		<LookAt>
+			<longitude>77.83694282771813</longitude>
+			<latitude>23.52246085594474</latitude>
+			<altitude>0</altitude>
+			<heading>0.000401406760677979</heading>
+			<tilt>30.00063725781996</tilt>
+			<range>141.0277378879786</range>
+			<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+		</LookAt>
+		<styleUrl>#msn_ylw-circle</styleUrl>
+		<Point>
+			<gx:drawOrder>1</gx:drawOrder>
+			<coordinates>77.83691458240436,23.52238518568456,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

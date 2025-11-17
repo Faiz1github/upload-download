@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>BTD01.kml</name>
+	<Schema name="Fat Map" id="S_Fat_Map_SIDD">
+		<SimpleField type="string" name="Planned_Fats"><displayName>&lt;b&gt;Planned Fats&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="HP"><displayName>&lt;b&gt;HP&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="Lat"><displayName>&lt;b&gt;Lat&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="Long"><displayName>&lt;b&gt;Long&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Schema name="Primary Splitter" id="S_Primary_Splitter_SIIDD">
+		<SimpleField type="string" name="ODF_No_"><displayName>&lt;b&gt;ODF No.&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="Primary_Splitter"><displayName>&lt;b&gt;Primary Splitter&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="Occupied_HPs"><displayName>&lt;b&gt;Occupied HPs&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="LAT"><displayName>&lt;b&gt;LAT&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="LONG"><displayName>&lt;b&gt;LONG&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Schema name="poleuploadcsv" id="S_poleuploadcsv_SDD">
+		<SimpleField type="string" name="NE"><displayName>&lt;b&gt;NE&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="LAT"><displayName>&lt;b&gt;LAT&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="Long"><displayName>&lt;b&gt;Long&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Style id="hlightPointStyle0">
+		<IconStyle>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/ylw-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.8</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>Planned Fats</b></td><td>$[Fat Map/Planned_Fats]</td></tr>
+  <tr><td><b>HP</b></td><td>$[Fat Map/HP]</td></tr>
+  <tr><td><b>Lat</b></td><td>$[Fat Map/Lat]</td></tr>
+  <tr><td><b>Long</b></td><td>$[Fat Map/Long]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/ylw-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="pointStyleMap">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="normPointStyle0">
+		<IconStyle>
+			<scale>0.8</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/ylw-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.8</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>Planned Fats</b></td><td>$[Fat Map/Planned_Fats]</td></tr>
+  <tr><td><b>HP</b></td><td>$[Fat Map/HP]</td></tr>
+  <tr><td><b>Lat</b></td><td>$[Fat Map/Lat]</td></tr>
+  <tr><td><b>Long</b></td><td>$[Fat Map/Long]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/ylw-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl0">
+		<IconStyle>
+			<color>ffffff00</color>
+			<scale>1.18182</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/polygon.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="normPointStyle">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>NE</b></td><td>$[poleuploadcsv/NE]</td></tr>
+  <tr><td><b>LAT</b></td><td>$[poleuploadcsv/LAT]</td></tr>
+  <tr><td><b>Long</b></td><td>$[poleuploadcsv/Long]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="hlightPointStyle">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>NE</b></td><td>$[poleuploadcsv/NE]</td></tr>
+  <tr><td><b>LAT</b></td><td>$[poleuploadcsv/LAT]</td></tr>
+  <tr><td><b>Long</b></td><td>$[poleuploadcsv/Long]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="pointStyleMap0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="hlightPointStyle1">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<scale>2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_square_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>ODF No.</b></td><td>$[Primary Splitter/ODF_No_]</td></tr>
+  <tr><td><b>Primary Splitter</b></td><td>$[Primary Splitter/Primary_Splitter]</td></tr>
+  <tr><td><b>Occupied HPs</b></td><td>$[Primary Splitter/Occupied_HPs]</td></tr>
+  <tr><td><b>LAT</b></td><td>$[Primary Splitter/LAT]</td></tr>
+  <tr><td><b>LONG</b></td><td>$[Primary Splitter/LONG]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="s_ylw-pushpin0">
+		<IconStyle>
+			<color>ffffff00</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/polygon.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.8</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="normPointStyle1">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<scale>2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_square.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>ODF No.</b></td><td>$[Primary Splitter/ODF_No_]</td></tr>
+  <tr><td><b>Primary Splitter</b></td><td>$[Primary Splitter/Primary_Splitter]</td></tr>
+  <tr><td><b>Occupied HPs</b></td><td>$[Primary Splitter/Occupied_HPs]</td></tr>
+  <tr><td><b>LAT</b></td><td>$[Primary Splitter/LAT]</td></tr>
+  <tr><td><b>LONG</b></td><td>$[Primary Splitter/LONG]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="pointStyleMap00">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>POLE</name>
+		<open>1</open>
+		<Placemark>
+			<name>BTD01</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Primary_Splitter_SIIDD">
+					<SimpleData name="ODF_No_">BTD01</SimpleData>
+					<SimpleData name="Primary_Splitter">2</SimpleData>
+					<SimpleData name="Occupied_HPs">96</SimpleData>
+					<SimpleData name="LAT">23.5275</SimpleData>
+					<SimpleData name="LONG">77.8375</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>77.83745999999995,23.52753999999997,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BTD010101</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Fat_Map_SIDD">
+					<SimpleData name="Planned_Fats">BTD010101</SimpleData>
+					<SimpleData name="HP">8</SimpleData>
+					<SimpleData name="Lat">23.5274</SimpleData>
+					<SimpleData name="Long">77.8374</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>77.83739804999998,23.52742022000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BTD010102</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Fat_Map_SIDD">
+					<SimpleData name="Planned_Fats">BTD010102</SimpleData>
+					<SimpleData name="HP">8</SimpleData>
+					<SimpleData name="Lat">23.5276</SimpleData>
+					<SimpleData name="Long">77.8381</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>77.83806000999999,23.52756592999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BTD010103</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Fat_Map_SIDD">
+					<SimpleData name="Planned_Fats">BTD010103</SimpleData>
+					<SimpleData name="HP">8</SimpleData>
+					<SimpleData name="Lat">23.5277</SimpleData>
+					<SimpleData name="Long">77.8382</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>77.83820728000002,23.52770597999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BTD010104</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Fat_Map_SIDD">
+					<SimpleData name="Planned_Fats">BTD010104</SimpleData>
+					<SimpleData name="HP">8</SimpleData>
+					<SimpleData name="Lat">23.5271</SimpleData>
+					<SimpleData name="Long">77.8376</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>77.83764879000002,23.52705642,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BTD010105</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Fat_Map_SIDD">
+					<SimpleData name="Planned_Fats">BTD010105</SimpleData>
+					<SimpleData name="HP">8</SimpleData>
+					<SimpleData name="Lat">23.5272</SimpleData>
+					<SimpleData name="Long">77.838</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>77.83801605999999,23.5272307,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BTD010106</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Fat_Map_SIDD">
+					<SimpleData name="Planned_Fats">BTD010106</SimpleData>
+					<SimpleData name="HP">8</SimpleData>
+					<SimpleData name="Lat">23.5272</SimpleData>
+					<SimpleData name="Long">77.8383</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>77.83825564999999,23.52718369999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BTD010107</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Fat_Map_SIDD">
+					<SimpleData name="Planned_Fats">BTD010107</SimpleData>
+					<SimpleData name="HP">8</SimpleData>
+					<SimpleData name="Lat">23.5273</SimpleData>
+					<SimpleData name="Long">77.839</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>77.83896119000002,23.52734009000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BTD010108</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Fat_Map_SIDD">
+					<SimpleData name="Planned_Fats">BTD010108</SimpleData>
+					<SimpleData name="HP">8</SimpleData>
+					<SimpleData name="Lat">23.527</SimpleData>
+					<SimpleData name="Long">77.8382</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>77.83819824999999,23.52695932,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BTD010201</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Fat_Map_SIDD">
+					<SimpleData name="Planned_Fats">BTD010201</SimpleData>
+					<SimpleData name="HP">8</SimpleData>
+					<SimpleData name="Lat">23.5268</SimpleData>
+					<SimpleData name="Long">77.8387</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>77.83867584000002,23.52679212,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BTD010202</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Fat_Map_SIDD">
+					<SimpleData name="Planned_Fats">BTD010202</SimpleData>
+					<SimpleData name="HP">8</SimpleData>
+					<SimpleData name="Lat">23.5265</SimpleData>
+					<SimpleData name="Long">77.8379</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>77.83785186999999,23.52646425000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BTD010203</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Fat_Map_SIDD">
+					<SimpleData name="Planned_Fats">BTD010203</SimpleData>
+					<SimpleData name="HP">8</SimpleData>
+					<SimpleData name="Lat">23.5264</SimpleData>
+					<SimpleData name="Long">77.8383</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>77.83828912,23.52644908999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BTD010204</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Fat_Map_SIDD">
+					<SimpleData name="Planned_Fats">BTD010204</SimpleData>
+					<SimpleData name="HP">8</SimpleData>
+					<SimpleData name="Lat">23.5257</SimpleData>
+					<SimpleData name="Long">77.8376</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>77.83763319000001,23.52567199999996,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P1</name>
+			<LookAt>
+				<longitude>77.83797931417941</longitude>
+				<latitude>23.5274433115524</latitude>
+				<altitude>0</altitude>
+				<heading>0.0006504772210004211</heading>
+				<tilt>25.76023198643754</tilt>
+				<range>138.0479496654788</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>77.83774348305238,23.52755776762929,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P2</name>
+			<LookAt>
+				<longitude>77.83821916914466</longitude>
+				<latitude>23.52718967475688</latitude>
+				<altitude>0</altitude>
+				<heading>0.000745191647665969</heading>
+				<tilt>25.76028690375778</tilt>
+				<range>151.807689702596</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>77.83782752155678,23.52715712879105,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P3</name>
+			<LookAt>
+				<longitude>77.83845709617154</longitude>
+				<latitude>23.52700420128603</latitude>
+				<altitude>0</altitude>
+				<heading>0.000840167313433613</heading>
+				<tilt>25.76028477581922</tilt>
+				<range>151.2626003783388</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>77.8386597802447,23.5272819066494,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P4</name>
+			<LookAt>
+				<longitude>77.83845709617154</longitude>
+				<latitude>23.52700420128603</latitude>
+				<altitude>0</altitude>
+				<heading>0.000840167313433613</heading>
+				<tilt>25.76028477581922</tilt>
+				<range>151.2626003783388</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>77.83847911581603,23.52686090361136,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P5</name>
+			<LookAt>
+				<longitude>77.83802012046182</longitude>
+				<latitude>23.52682370337217</latitude>
+				<altitude>0</altitude>
+				<heading>0.0006683519150909954</heading>
+				<tilt>25.7602943797912</tilt>
+				<range>163.3421386904389</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>77.83757991821528,23.52682338753993,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P6</name>
+			<LookAt>
+				<longitude>77.83802667182586</longitude>
+				<latitude>23.52682350822537</latitude>
+				<altitude>0</altitude>
+				<heading>0.0006683518834039242</heading>
+				<tilt>25.76029473690352</tilt>
+				<range>153.8141957156459</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>77.83766315618918,23.52656105017176,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>JC01</name>
+			<LookAt>
+				<longitude>77.83772952132547</longitude>
+				<latitude>23.5274545427781</latitude>
+				<altitude>0</altitude>
+				<heading>0.002141584494036986</heading>
+				<tilt>24.97484360450411</tilt>
+				<range>139.7809471446059</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>77.83758552615794,23.52712870292234,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>MPCG/VID/BTD/GI/000001</name>
+			<open>1</open>
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_poleuploadcsv_SDD">
+					<SimpleData name="NE">MPCG/VID/BTD/GI/000001</SimpleData>
+					<SimpleData name="LAT">23.5271</SimpleData>
+					<SimpleData name="Long">77.8375</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>77.83753874000003,23.52712615000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>MPCG/VID/BTD/GI/000009</name>
+			<open>1</open>
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_poleuploadcsv_SDD">
+					<SimpleData name="NE">MPCG/VID/BTD/GI/000009</SimpleData>
+					<SimpleData name="LAT">23.5262</SimpleData>
+					<SimpleData name="Long">77.8378</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>77.83779891,23.52617824000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>MPCG/VID/BTD/GI/000010</name>
+			<open>1</open>
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_poleuploadcsv_SDD">
+					<SimpleData name="NE">MPCG/VID/BTD/GI/000010</SimpleData>
+					<SimpleData name="LAT">23.5257</SimpleData>
+					<SimpleData name="Long">77.8377</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>77.83767456,23.52571847999997,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>MPCG/VID/BTD/FRP/000011</name>
+			<open>1</open>
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_poleuploadcsv_SDD">
+					<SimpleData name="NE">MPCG/VID/BTD/FRP/000011</SimpleData>
+					<SimpleData name="LAT">23.5264</SimpleData>
+					<SimpleData name="Long">77.8383</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<gx:balloonVisibility>1</gx:balloonVisibility>
+			<Point>
+				<coordinates>77.83827504,23.52643674999997,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
